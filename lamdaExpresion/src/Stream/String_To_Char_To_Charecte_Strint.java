@@ -1,0 +1,14 @@
+package Stream;
+
+import java.util.stream.Collectors;
+
+public class String_To_Char_To_Charecte_Strint {
+	public static void main(String[] args) {
+		String st="susanta";
+		
+	String st1=st.chars().mapToObj(e->(char)e).map(String::valueOf)
+			.collect(Collectors.joining());
+	System.out.println(st1);
+	}
+
+}

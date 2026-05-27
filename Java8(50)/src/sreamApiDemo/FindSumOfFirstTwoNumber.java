@@ -1,0 +1,23 @@
+package sreamApiDemo;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+public class FindSumOfFirstTwoNumber {
+	public static void main(String[] args) {
+		List<Integer> list=Arrays.asList(12,10,23,15,39,1,100,2);
+		int sum=list.stream().limit(2)
+				.peek(e->System.out.println(e.TYPE))
+				.mapToInt(Integer::valueOf)
+				.sum();
+		System.out.println(sum);
+
+		Optional<Integer> mul=list.stream().limit(2).reduce((a,b)->a*b);
+		mul.ifPresent(System.out::println);
+		 List<String> words = Arrays.asList("hello", "world","hio");
+         String combined = words.stream().reduce("", (a, b) -> a + " " + b);
+         System.out.println("Combined words: " + combined.trim()); // Output: Combined words: hello world
+	}
+
+}

@@ -1,0 +1,24 @@
+package lamdaExpresion;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class ConsumerDemo {
+	public static void main(String[] args) {
+//		Consumer<String> c= s->System.out.println(s);
+//		c.accept("rama");
+		
+//==========================================================		
+		List<String> li=new ArrayList<String>();
+		li.add("aa");
+		li.add("bb");
+		li.add("cc");
+		li.add("dd");
+		//li.stream().forEach(c);
+//=============================================================
+		li.stream().forEach(s->System.out.println(s));
+	}
+	
+
+}

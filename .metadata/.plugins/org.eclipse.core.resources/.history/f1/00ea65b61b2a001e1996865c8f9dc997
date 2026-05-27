@@ -1,0 +1,12 @@
+package lamdaExpresion;
+
+interface P
+{
+	default void show()
+	{
+		System.out.println("interface P");
+	}
+}
+public class StaticMethodDemo {
+
+}
