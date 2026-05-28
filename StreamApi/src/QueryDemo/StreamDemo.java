@@ -106,6 +106,7 @@ public class StreamDemo {
 		List<Employee> el=getEmployees();
 		List<Employee> result=new ArrayList<Employee>();
 		
+		
 //		//1.Get all the Employee Who are work it dept?============
 		
 //		System.out.println("//1.Get all the Employee Who are work "IT" dept?");
@@ -291,6 +292,6 @@ public class StreamDemo {
 		System.out.println(e.getKey()+" "+e.getValue())
 		);
 
-		
+	System.out.println("End");	
 	}
 }

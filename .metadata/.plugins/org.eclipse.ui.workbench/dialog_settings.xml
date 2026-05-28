@@ -4,15 +4,19 @@
 		<item key="dialogHeight" value="705"/>
 		<item key="dialogWidth" value="775"/>
 		<list key="orderedElements">
+			<item value="org.eclipse.egit.ui.RepositoriesView"/>
 			<item value="org.eclipse.jdt.ui.PackagesView"/>
 		</list>
 		<list key="orderedProviders">
 			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 			<item value="2"/>
 		</list>
 		<list key="textArray">
+			<item value="git"/>
 			<item value="pac"/>
 			<item value="pa"/>
 		</list>

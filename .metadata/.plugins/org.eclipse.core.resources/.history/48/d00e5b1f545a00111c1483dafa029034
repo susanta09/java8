@@ -106,6 +106,7 @@ public class StreamDemo {
 		List<Employee> el=getEmployees();
 		List<Employee> result=new ArrayList<Employee>();
 		
+		
 //		//1.Get all the Employee Who are work it dept?============
 		
 //		System.out.println("//1.Get all the Employee Who are work "IT" dept?");
@@ -236,18 +237,18 @@ public class StreamDemo {
 		
 // Find the highest salary in each department=======================================
 		
-		Map<String, Employee> es=el.stream().filter(e->e.getSal()!=null&&e.getDept()!=null)
-				.collect(Collectors.groupingBy(Employee::getDept))
-				.entrySet().stream().collect(Collectors.toMap(
-						Map.Entry::getKey,
-						entry -> entry.getValue().stream().max(Comparator.comparing(Employee::getSal))
-						.orElse(null)
-						));
-		es.forEach((d,e)->{
-					System.out.print(d+"->");
-					System.err.print(e);
-					System.out.println();
-		});
+//		Map<String, Employee> es=el.stream().filter(e->e.getSal()!=null&&e.getDept()!=null)
+//				.collect(Collectors.groupingBy(Employee::getDept))
+//				.entrySet().stream().collect(Collectors.toMap(
+//						Map.Entry::getKey,
+//						entry -> entry.getValue().stream().max(Comparator.comparing(Employee::getSal))
+//						.orElse(null)
+//						));
+//		es.forEach((d,e)->{
+//					System.out.print(d+"->");
+//					System.err.print(e);
+//					System.out.println();
+//		});
 		
 //		Map<String, Employee> m=el.stream()
 //				.filter(e->e.getSal()!=null&&e.getDept()!=null)
